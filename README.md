@@ -6,7 +6,7 @@ To create a simple application which consists of four services that work togethe
 Service one will be used to render templates and communicate with the other three services. 
 Services two and three will both generate a random object, which will both be used to create an object in service four.
 
-The application will generate a basketball player template. Service two will generate a player position and service three will generate a playstyle. Service four will then use these to generate the player template. Service one will then deliver this information to the user.
+The application will generate different types of weapons in a fantasy-style setting. Service two will generate a weapon type and service three will generate a damage multiplier for the weapon. Service four will then use these to generate the final weapon. Service one will then deliver this information to the user.
 
 ## Project Management
 ### Trello
