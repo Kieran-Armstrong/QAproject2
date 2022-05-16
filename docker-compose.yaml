@@ -1,0 +1,41 @@
+version: "3.9"
+services:
+  service1:
+    container_name: service1
+    image: kieran1511/service1:latest
+    build: service_1
+    deploy:
+      replicas: 3
+  
+  service2:
+    container_name: service2
+    image: kieran1511/service2:latest
+    build: service_2
+    deploy:
+      replicas: 3
+
+  service3:
+    container_name: service3
+    image: kieran1511/service3:latest
+    build: service_3
+    deploy:
+      replicas: 3
+
+  service4:
+    container_name: service4
+    image: kieran1511/service-4:latest
+    build: service_4
+    deploy:
+      replicas: 3
+
+  proxy:
+    container_name: nginx-proxy
+    image: nginx:alpine
+    ports:
+      - 80:80
+    volumes:
+      - type: bind
+        source: ./nginx.conf
+        target: /etc/nginx/nginx.conf
+    depends_on:
+      - "service1"
