@@ -88,10 +88,10 @@ def post_status():
     weapon = request.json['weapon']
     damage = request.json['damage']
 
-    if weapon == 'sword':
-        name = random.choice(list(swords["names"].values()))
-    elif weapon == 'axe':
-        name = random.choice(list(axes["names"].values()))
+    if weapon == 'longsword':
+        name = random.choice(list(longswords["names"].values()))
+    elif weapon == 'sycthe':
+        name = random.choice(list(scythes["names"].values()))
     elif weapon == 'dagger':
         name = random.choice(list(daggers["names"].values()))
     elif weapon == 'crossbow':
@@ -101,7 +101,7 @@ def post_status():
     elif weapon == 'club':
         name = random.choice(list(clubs["names"].values()))
     else:
-        name = random.choice(list(staves["names"].values()))
+        name = random.choice(list(spears["names"].values()))
 
     if damage <= 10:
         level = "Beginner"
