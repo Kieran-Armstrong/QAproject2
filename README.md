@@ -61,6 +61,11 @@ Below is a simple diagram showing how the services should interact with one anot
 
 Unit testing was utilised for this project using pytest. 
 
+## Issues during development
+
+I encountered numerous set backs due to an issue with GCP. I have experienced issues with my billing account throughout the duration of the project.
+I am in contact with GCP support to hopefully have this resolved and resume the functionailty of the application
+
 ## Future Developments
 - In order to make for easier development, I should have made use of multiple branches on GitHub. 
 - would like to develop the application further and implement a wider range of uses for the end user
